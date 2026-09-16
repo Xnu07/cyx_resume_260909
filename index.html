@@ -1,24 +1,91 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>cyx - resume</title>
+    <meta name="description" content="蔡耀勋的个人简历">
+    <title>蔡耀勋 · 个人简历</title>
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-    <h1>个人简历</h1>
-  <p>姓名:蔡耀勋</p>
-  <p>性别:男</p>
-  <p>年龄:19</p>
-  <p>学校:科干</p>
-  <p>专业:人工智能技术</p>
-  <p>邮箱:</p>
-  <p>联系电话:</p>
-  <p>兴趣爱好:</p>
-  <hr>
-  <h2>教育经历:</h2>
-  <p></p>
-    <hr>
-  <h2>项目经历:</h2>
+
+    <!-- ===== 顶部：姓名 + 基本信息 ===== -->
+    <header class="hero">
+        <div class="container hero-inner">
+            <div class="avatar">蔡</div>
+            <div class="hero-text">
+                <h1 class="hero-name">蔡耀勋</h1>
+                <p class="hero-sub">人工智能技术专业 · 在校学生</p>
+                <ul class="hero-meta">
+                    <li>男 · 19 岁</li>
+                    <li>广东</li>
+                    <li><a href="mailto:your@email.com">your@email.com</a></li>
+                    <li><a href="tel:13800000000">138-0000-0000</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== 导航：点击平滑滚动到对应区块 ===== -->
+    <nav class="nav">
+        <div class="container nav-inner">
+            <a href="#edu">教育经历</a>
+            <a href="#project">项目经历</a>
+            <a href="#about">自我评价</a>
+        </div>
+    </nav>
+
+    <main class="container">
+
+        <!-- ===== 教育经历 ===== -->
+        <section id="edu" class="card">
+            <h2 class="section-title">教育经历</h2>
+            <ul class="timeline">
+                <li class="timeline-item">
+                    <p class="timeline-head">
+                        <span class="timeline-title">科干 · 人工智能技术</span>
+                        <span class="timeline-date">2025.09 - 2028.06</span>
+                    </p>
+                    <p class="timeline-desc">主修课程：Python 程序设计、Web 前端技术。</p>
+                </li>
+            </ul>
+        </section>
+
+        <!-- ===== 项目经历 ===== -->
+        <section id="project" class="card">
+            <h2 class="section-title">项目经历</h2>
+
+            <article class="project">
+                <h3 class="project-title">个人简历网页 <span class="tag">HTML / CSS / JS</span></h3>
+                <p class="project-desc">
+                    课程实训作业。用 HTML 搭页面结构，外链 CSS 做排版，加了几个简单的 JavaScript 效果，最后用 GitHub Pages 发布成网页。
+                </p>
+            </article>
+        </section>
+
+        <!-- ===== 自我评价 ===== -->
+        <section id="about" class="card">
+            <h2 class="section-title">自我评价</h2>
+            <p class="about-text">
+                
+            </p>
+            <ul class="tags">
+                <li>动手能力</li>
+                <li>自学能力</li>
+            </ul>
+        </section>
+
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>© <span id="year"></span></p>
+        </div>
+    </footer>
+
+    <!-- 回到顶部按钮 -->
+    <button id="toTop" class="to-top" type="button" aria-label="回到顶部">↑</button>
+
+    <script src="./script.js"></script>
 </body>
 </html>
